@@ -1,0 +1,62 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+*.iml
+
+# Python (server)
+server/.venv/
+server/**/__pycache__/
+server/**/*.pyc
+server/.env
+server/config.yaml
+server/data/**
+!server/data/.gitkeep
+!server/data/access_password.example.txt
+server/sample_music/
+
+# Flutter (mobile)
+mobile/.dart_tool/
+mobile/.flutter-plugins
+mobile/.flutter-plugins-dependencies
+mobile/.packages
+mobile/.pub-cache/
+mobile/.pub/
+mobile/build/
+mobile/**/Generated.xcconfig
+mobile/**/flutter_export_environment.sh
+mobile/android/.gradle/
+mobile/android/local.properties
+mobile/android/**/build/
+mobile/android/app/debug/
+mobile/android/app/profile/
+mobile/android/app/release/
+mobile/android/key.properties
+mobile/android/**/*.keystore
+mobile/android/**/*.jks
+mobile/ios/Pods/
+mobile/ios/.symlinks/
+mobile/ios/Flutter/Flutter.framework
+mobile/ios/Flutter/Flutter.podspec
+mobile/windows/flutter/ephemeral/
+mobile/linux/flutter/ephemeral/
+mobile/macos/Flutter/ephemeral/
+
+# Binaries / releases
+**/*.apk
+**/*.aab
+**/*.ipa
+**/*.exe
+**/MusicHub.apk
+mobile/releases/
+mobile/releases/**
+*.log
+start-all.log
+mobile/start-all.log
+
+# Local secrets / machine paths
+**/local.properties
+**/.env
+**/.env.*

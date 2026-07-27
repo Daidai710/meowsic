@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+config.yaml
+data/**
+!data/.gitkeep
+!data/access_password.example.txt
+sample_music/
+*.log

@@ -1,0 +1,7 @@
+# Copy to config.yaml (gitignored) and edit.
+# Or use env: MUSIC_HUB_LIBRARY_PATH / MUSIC_HUB_HOST / MUSIC_HUB_PORT / MUSIC_HUB_FFMPEG_PATH
+
+library_path: "/path/to/your/music"
+host: "0.0.0.0"
+port: 8787
+# ffmpeg_path: "/usr/bin/ffmpeg"

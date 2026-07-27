@@ -21,7 +21,7 @@ meowsic **不是**「连到某个固定服务器听某个人的歌」。
 | UI | 来源 |
 |----|------|
 | 网页播放器 | 启动 server 后打开 http://127.0.0.1:8787 |
-| 手机 App | [Releases 下载 APK](https://github.com/Daidai710/meowsic/releases) |
+| 手机 App | [下载 meowsic-v23.apk](https://github.com/Daidai710/meowsic/releases/download/v23/meowsic-v23.apk) · [全部 Releases](https://github.com/Daidai710/meowsic/releases) |
 | Windows 桌面端 | 可选：用 Flutter 自行编译（见 README） |
 
 ## 怎么用

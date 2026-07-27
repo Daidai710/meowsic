@@ -1,6 +1,34 @@
-# meowsic
+<p align="center">
+  <img src="mobile/assets/icons/meowsic_icon_256.png" width="120" alt="meowsic logo">
+</p>
 
-私人 **局域网** 音乐库：电脑跑服务 + 网页播放器 + Flutter 客户端（**meowsic**）。
+<h1 align="center">meowsic</h1>
+
+<p align="center">
+  私人局域网音乐库 · Personal self-hosted music hub<br>
+  <strong>你的电脑 · 你的曲库 · 你的手机</strong>
+</p>
+
+<p align="center">
+  <a href="https://github.com/Daidai710/meowsic/releases/latest"><img src="https://img.shields.io/github/v/release/Daidai710/meowsic?label=release&color=brightgreen" alt="release"></a>
+  <a href="https://github.com/Daidai710/meowsic/releases/latest"><img src="https://img.shields.io/github/downloads/Daidai710/meowsic/total?label=downloads" alt="downloads"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="license"></a>
+  <a href="https://github.com/Daidai710/meowsic/stargazers"><img src="https://img.shields.io/github/stars/Daidai710/meowsic?style=social" alt="stars"></a>
+  <img src="https://img.shields.io/badge/platform-Windows%20%7C%20Android%20%7C%20Web-informational" alt="platform">
+  <img src="https://img.shields.io/badge/stack-Python%20%7C%20Flutter-orange" alt="stack">
+</p>
+
+<p align="center">
+  <a href="https://github.com/Daidai710/meowsic/releases/latest"><strong>⬇ 下载 Android APK</strong></a>
+  ·
+  <a href="#快速开始">快速开始</a>
+  ·
+  <a href="FOR_OTHERS.md">使用说明</a>
+  ·
+  <a href="DEPLOY.md">部署</a>
+</p>
+
+---
 
 只播放 **你自己电脑上的** 本地音乐，不依赖公网曲库 / 云音乐。  
 **每个人在自己电脑上运行服务、扫描自己的曲库**——不会连到别人的电脑。
@@ -31,7 +59,7 @@ Start-All.bat
 
 1. 浏览器打开 http://127.0.0.1:8787  
 2. **设置** → 填写 **本机** 音乐文件夹 → **扫描曲库**  
-3. 点 **扫码连手机**（显示的是你自己的局域网地址）
+3. 点 **扫码连手机**
 
 防火墙请放行端口 **8787**。
 
@@ -39,12 +67,10 @@ Start-All.bat
 
 | 方式 | 做法 |
 |------|------|
+| **安装 App（推荐）** | [下载 meowsic-v23.apk](https://github.com/Daidai710/meowsic/releases/download/v23/meowsic-v23.apk) 或打开 [Releases](https://github.com/Daidai710/meowsic/releases/latest) → 安装 → 扫码连接 |
 | **浏览器（免安装）** | 与电脑同一 Wi‑Fi → 扫电脑网页二维码，或打开 `http://电脑IP:8787` |
-| **安装 App** | 从 [Releases 下载 APK](https://github.com/Daidai710/meowsic/releases) → 安装 → 扫码或填 `http://电脑IP:8787` |
 
 **手机上不要填 `127.0.0.1`**（那是手机自己，不是电脑）。
-
-更细的说明：[FOR_OTHERS.md](./FOR_OTHERS.md) · [手机指南](./mobile/PHONE_GUIDE.md)
 
 ### 3. Windows 桌面客户端（可选）
 
@@ -56,8 +82,7 @@ flutter pub get
 flutter run -d windows
 ```
 
-本机连接：`http://127.0.0.1:8787`。  
-首次构建若提示 symlink，请打开 Windows「开发人员模式」。
+本机连接：`http://127.0.0.1:8787`。
 
 ## 功能
 
@@ -75,8 +100,8 @@ meowsic/
   server/          # Python 服务 + 网页播放器
   mobile/          # Flutter 客户端（Android / Windows）
   Start-All.bat    # 一键启动
-  FOR_OTHERS.md    # 使用说明（各自曲库 + 手机）
-  DEPLOY.md        # 更完整的部署说明
+  FOR_OTHERS.md    # 使用说明
+  DEPLOY.md        # 部署说明
   LICENSE          # MIT
 ```
 
@@ -84,27 +109,28 @@ meowsic/
 
 | 文档 | 内容 |
 |------|------|
-| [FOR_OTHERS.md](./FOR_OTHERS.md) | 使用说明：各自曲库、网页 UI、手机 |
-| [DEPLOY.md](./DEPLOY.md) | 服务端 / 网页 / Android / Windows 部署 |
-| [mobile/PHONE_GUIDE.md](./mobile/PHONE_GUIDE.md) | 手机连接与安装 |
-| [mobile/README.md](./mobile/README.md) | Flutter 客户端开发 |
-| [server/README.md](./server/README.md) | 服务端运行与配置 |
+| [FOR_OTHERS.md](./FOR_OTHERS.md) | 使用说明：各自曲库、网页、手机 |
+| [DEPLOY.md](./DEPLOY.md) | 完整部署 |
+| [mobile/PHONE_GUIDE.md](./mobile/PHONE_GUIDE.md) | 手机连接 |
+| [mobile/README.md](./mobile/README.md) | Flutter 开发 |
+| [server/README.md](./server/README.md) | 服务端配置 |
 
 ## 配置（可选）
 
 | 方式 | 说明 |
 |------|------|
 | 环境变量 | `MUSIC_HUB_LIBRARY_PATH`、`MUSIC_HUB_PORT`、`MUSIC_HUB_FFMPEG_PATH` |
-| `server/config.example.yaml` | 复制为 `config.yaml`（勿把真实配置提交到 git） |
+| `server/config.example.yaml` | 复制为 `config.yaml`（勿提交真实配置） |
 | 网页设置 | 运行后修改曲库路径 |
-
-可选访问密码：见 `server/data/access_password.example.txt`。
 
 ## 隐私与版权
 
 - 仅用于**个人合法拥有**的本地音频  
-- 请勿把真实密码、本机绝对路径配置、数据库提交到公开仓库  
 - 开源协议：**MIT**（[LICENSE](./LICENSE)）
+
+## Star History（可选）
+
+如果觉得有用，欢迎点右上角 **Star**，方便更多人发现局域网自建音乐库方案。
 
 ## 许可
 

@@ -2,14 +2,19 @@
 
 私人 **局域网** 音乐库：电脑跑服务 + 网页播放器 + Flutter 客户端（**meowsic**）。
 
-只播放你自己放在电脑上的本地音乐，**不依赖公网曲库 / 云音乐 API**。  
-手机、电脑 App、浏览器都连同一台电脑上的服务（默认端口 **8787**）。
+只播放 **你自己电脑上的** 本地音乐，**不依赖公网曲库 / 云音乐 API**。  
+**每个人在自己电脑上运行服务、扫描自己的曲库**——不会连到别人的电脑（除非你自己做穿透分享）。
 
 ```
-手机 meowsic App  ──局域网──►  电脑 server (:8787)
-浏览器 Web 播放器 ──局域网──►  扫描曲库 / 流式播放 / 歌单 / 一起听
-Windows 桌面 App ──本机/局域网──►  同上
+【用户自己的电脑】
+  server 扫描「本机音乐文件夹」
+       ▲
+       │ 同一 Wi‑Fi
+  手机 App / 浏览器 ──► 只连这台电脑 (:8787)
 ```
+
+> 给他人使用说明（各自曲库 + APK 下载）：见 **[FOR_OTHERS.md](./FOR_OTHERS.md)**  
+> Android 安装包：仓库 **[Releases](../../releases)**（上传后把链接写进此处）
 
 ## 仓库结构
 
@@ -77,11 +82,12 @@ flutter run -d windows
 
 | 文档 | 内容 |
 |------|------|
+| [FOR_OTHERS.md](./FOR_OTHERS.md) | **给别人用：各自曲库 + 网页 UI + APK 下载** |
 | [DEPLOY.md](./DEPLOY.md) | 服务端 / 网页 / Android / Windows 部署与发布 |
 | [mobile/PHONE_GUIDE.md](./mobile/PHONE_GUIDE.md) | 手机连接与安装说明 |
 | [mobile/README.md](./mobile/README.md) | Flutter 客户端开发 |
 | [server/README.md](./server/README.md) | 服务端运行与配置 |
-| [GITHUB_UPLOAD.md](./GITHUB_UPLOAD.md) | **上传到个人 GitHub（从登录开始）** |
+| [GITHUB_UPLOAD.md](./GITHUB_UPLOAD.md) | 上传到个人 GitHub（从登录开始） |
 
 ## 配置
 

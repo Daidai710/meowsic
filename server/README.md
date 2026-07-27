@@ -40,4 +40,4 @@ requirements.txt
 
 可选访问密码：见 `data/access_password.example.txt`。
 
-更多：[../README.md](../README.md)、[../DEPLOY.md](../DEPLOY.md)。
+更多：[../README.md](../README.md)、[../USAGE.md](../USAGE.md)、[../DEPLOY.md](../DEPLOY.md)。

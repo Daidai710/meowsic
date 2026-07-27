@@ -6,7 +6,7 @@
 ## 普通用户
 
 不必自己编译。请从仓库 [Releases](https://github.com/Daidai710/meowsic/releases/latest) 下载 APK，  
-并按 [PHONE_GUIDE.md](./PHONE_GUIDE.md) 连接电脑。
+并按 [USAGE.md](../USAGE.md) 连接电脑。
 
 ## 开发者：运行
 
@@ -54,4 +54,4 @@ lib/
 assets/icons/
 ```
 
-总说明：[../README.md](../README.md) · 部署：[../DEPLOY.md](../DEPLOY.md)
+总说明：[../README.md](../README.md) · 使用：[../USAGE.md](../USAGE.md) · 进阶：[../DEPLOY.md](../DEPLOY.md)

@@ -1,4 +1,4 @@
-# Build meowsic APK (release). Do NOT commit the apk — use GitHub Releases.
+# Build meowsic APK (release) for local install.
 $ErrorActionPreference = "Stop"
 $Root = Split-Path -Parent $MyInvocation.MyCommand.Path
 Set-Location $Root
@@ -29,5 +29,5 @@ if (-not (Test-Path $src)) { throw "APK not found: $src" }
 $size = [math]::Round((Get-Item $src).Length / 1MB, 1)
 Write-Host ""
 Write-Host "OK: $src  ($size MB)"
-Write-Host "Install on phone, or upload to GitHub Releases (do not git add apk)."
+Write-Host "Copy the APK to your phone and install."
 Write-Host ""

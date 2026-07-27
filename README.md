@@ -120,7 +120,7 @@ meowsic/
 | 方式 | 说明 |
 |------|------|
 | 环境变量 | `MUSIC_HUB_LIBRARY_PATH`、`MUSIC_HUB_PORT`、`MUSIC_HUB_FFMPEG_PATH` |
-| `server/config.example.yaml` | 复制为 `config.yaml`（勿提交真实配置） |
+| `server/config.example.yaml` | 复制为 `config.yaml` 后按本机路径修改 |
 | 网页设置 | 运行后修改曲库路径 |
 
 ## 隐私与版权
@@ -128,9 +128,7 @@ meowsic/
 - 仅用于**个人合法拥有**的本地音频  
 - 开源协议：**MIT**（[LICENSE](./LICENSE)）
 
-## Star History（可选）
-
-如果觉得有用，欢迎点右上角 **Star**，方便更多人发现局域网自建音乐库方案。
+如果觉得有用，欢迎点右上角 **Star**。
 
 ## 许可
 

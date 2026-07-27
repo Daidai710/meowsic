@@ -1,7 +1,7 @@
 # meowsic server
 
 电脑端私人音乐库服务 + 内置网页播放器。  
-面向 **局域网自用**，不提供对外 Swagger / 公开 API 文档页。
+在你自己的电脑上运行，手机通过局域网连接。
 
 ## 运行
 
@@ -23,9 +23,9 @@ Windows 双击：`Start-Music-Hub.bat`
 ## 目录
 
 ```
-app/           # 服务逻辑（扫描、流、歌单、一起听、鉴权）
+app/           # 服务逻辑（扫描、流、歌单、一起听等）
 web/           # 静态网页播放器
-data/          # 运行时数据（gitignore；仅 example 可入库）
+data/          # 运行时数据（本地生成）
 config.example.yaml
 requirements.txt
 ```
@@ -40,8 +40,4 @@ requirements.txt
 
 可选访问密码：见 `data/access_password.example.txt`。
 
-## 说明
-
-客户端（App / 网页）通过局域网与本服务通信。  
-仓库文档**不罗列 HTTP 接口表**；第三方请勿依赖未公开协议。  
-更多：仓库根 [README.md](../README.md)、[DEPLOY.md](../DEPLOY.md)。
+更多：[../README.md](../README.md)、[../DEPLOY.md](../DEPLOY.md)。

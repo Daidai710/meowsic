@@ -8,7 +8,7 @@
 
 1. 电脑服务已开，浏览器能打开 http://127.0.0.1:8787  
 2. 网页点 **「扫码连手机」**，记下地址（如 `http://192.168.0.8:8787`）  
-3. 手机连与电脑 **同一个 Wi‑Fi**（不要用 4G/5G 访客网）  
+3. 手机连与电脑 **同一个 Wi‑Fi**（不要用访客网络）  
 4. 用相机 / 浏览器扫码，或手动输入该地址  
 5. 即可搜歌、播放、建歌单  
 
@@ -20,27 +20,13 @@
 
 ---
 
-## 方式 B：安装 meowsic APK
+## 方式 B：安装 meowsic App（推荐）
 
-### 打包（在电脑上，做一次）
+### 下载安装
 
-需要已安装 **Flutter + Android SDK**，`flutter doctor` 正常。
-
-```powershell
-cd mobile
-flutter pub get
-flutter build apk --release
-```
-
-生成文件：
-
-```
-mobile/build/app/outputs/flutter-apk/app-release.apk
-```
-
-### 安装
-
-拷贝 apk 到手机 → 打开安装（允许未知来源）。
+1. 打开 [Releases 下载页](https://github.com/Daidai710/meowsic/releases/latest)  
+2. 下载 **meowsic-*.apk**（例如 [meowsic-v23.apk](https://github.com/Daidai710/meowsic/releases/download/v23/meowsic-v23.apk)）  
+3. 传到手机 → 打开安装（允许「未知来源」）  
 
 ### 连接
 
@@ -51,28 +37,14 @@ mobile/build/app/outputs/flutter-apk/app-release.apk
 
 ---
 
-## 方式 C：USB 调试安装（开发用）
-
-手机开 USB 调试，连电脑：
-
-```powershell
-cd mobile
-flutter devices
-flutter run --release
-```
-
-会直接装到已连接手机。
-
----
-
 ## 对照
 
 | | 浏览器 | meowsic App |
 |--|--------|-------------|
 | 安装 | 不用 | 装 apk |
 | 扫码 | 相机扫网页 | App 内扫码 |
-| 后台播放 | 一般一般 | 通常更好 |
-| iPhone | Safari 开局域网地址 | 需 Mac 才能打 iOS 包 |
+| 后台播放 | 一般 | 通常更好 |
+| iPhone | Safari 开局域网地址 | 暂无官方 iOS 包，可用浏览器 |
 
 ---
 
@@ -88,8 +60,8 @@ flutter run --release
 
 - 服务窗口是否还在跑  
 - 是否误填了 127.0.0.1  
-- 是否用了 http（明文局域网，不是 https）  
+- 是否用了 http（局域网明文，不是 https）  
 
-**只有几首歌 / 没歌**
+**没有歌**
 
 - 在电脑网页 **设置** 里确认曲库路径并 **扫描**  
